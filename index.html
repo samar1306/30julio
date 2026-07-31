@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oshine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons >
+  <link rel="preconnect
+  "
+    href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asimovian&family=Dancing+Script:wght@400..700&family=Germania+One&display=swap"
+        rel="stylesheet">
+    <style>
+      @keyframes cambiocolor{
+        0%{
+          color: #000;
+        }
+        25%{
+          color: #f00;
+        }
+        50%{
+          color: #0f0;
+        }
+        75%{
+          color: #00f;
+        }
+        100%{
+          color: #ffff;
+        }
+      }
+       
+      #beautytext{
+        animation: cambiocolor 10s linear infinite;
+      }
+
+      @media (width <= 600px){
+        .titulo{
+          color: red;
+          font-size: 20px;
+        }
+      
+      @media (width => 600px){
+        .titulo{
+          color: blue;
+          font-size: 30px;
+        }
+      }
+
+      header{
+        background-color: #e7e6e6;
+      }
+
+      h2{
+        font-weight: 500;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #7a7a7a;
+      }
+
+      h5{
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 40px;
+        color: #7a7a7a;
+      }
+      .btn{
+	      text-transform: uppercase;
+	      letter-spacing: 1px;
+      }
+
+      .btn-primary{
+	      background-color: #030f27;
+	      border: 0;
+	      border-radius: 0;
+	      padding: 10px 20px;
+	      font-size: 10px;
+	      font-weight: 500;
+      }
+
+      .btn-secondary{
+        color: #030f27;
+	      background-color: #ffff;
+	      border: 0;
+	      border-radius: 0;
+	      padding: 10px 20px;
+	      font-size: 10px;
+	      font-weight: 500;
+      }
+      
+      .titulo{
+        padding-bottom: 20px;
+      }
+      section{
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      #experience{
+        background-color: #e7e6e6;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      
+      #models{
+	      font-size: 14px;
+	      text-align: center;
+	      font-weight: 200;
+        margin-top: 50px;
+	      margin-bottom: 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      footer{
+	      color: #FAFAFA;
+	      padding: 50px 0px 50px 0px;
+	      background-color: #030f27;
+      }
+
+      #footer{
+	      color: #e6e6e6;
+      }
+
+      #name{
+	      color: #e6e6e6;
+	      font-weight: 300;
+        font-size: 15px ;
+      }
+
+      #accordion{
+        padding-bottom: 50px;
+      }
+
+      .tabb{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .ask{
+        padding-bottom: 20px;
+      }
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Oshine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#models">Model</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios-productos">Servicios y Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#preguntas">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beauty" class="container">
+      <div class="row">
+        <div class="col-6 align-content-center">
+          <span class="material-icons">home</span>
+          <h2 class="titulo">Beauty is on the Outside</h2>
+          <p id="beautytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur, doloremque quibusdam <br>
+            nobis rerum, autem saepe animi corporis quod magnam tempore porro, reprehenderit voluptate<br>suscipit ducimus ab aliquam ipsum in?</p>
+          <a href="#" class="btn btn-primary">Book a Model Now</a>
+        </div>
+        <div class="col-6">
+          <img src="img/woman-beauty.png" alt="" class="container">
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="img/woman-experience.jpg" alt="" class="container">
+          </div>
+          <div class="col-6 align-content-center">
+           <h2 class="titulo">25 years of Experience</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur, doloremque quibusdam <br>
+            nobis rerum, autem saepe animi corporis quod magnam tempore porro, reprehenderit voluptate<br>suscipit ducimus ab aliquam ipsum in?</p>
+           <a href="#" class="btn btn-secondary">Book a Model Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="models" class="section">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="titulo">Our Model</h2>
+				<h5 class="subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quos!</h5>
+			</div>
+
+			<div class="row">
+        <div class="col-3">
+          <img src="img/model-1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-3">
+          <img src="img/model-2.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-3">
+          <img src="img/model-3.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-3">
+          <img src="img/model-4.jpg" alt="" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="servicios-productos" class="container">
+      <div class="text-center">
+      <h2 class="tabb">Servicios y Productos</h2>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Servicio</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Productos</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-6">
+              <img src="img/servicios.jpeg" class="container">
+            </div>
+
+          <div class="col-6 align-content-center">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Contratación de modelos para campañas publicitarias.</li>
+              <li class="list-group-item">Modelos para pasarelas y desfiles de moda.</li>
+              <li class="list-group-item">Modelos para fotografía comercial y editorial.</li>
+              <li class="list-group-item">Modelos para eventos corporativos y promociones.</li>
+              <li class="list-group-item">Modelos para e-commerce y catálogos de productos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="row">
+            <div class="col-6 align-content-center">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Portafolio fotográfico profesional (Book).</li>
+                <li class="list-group-item">Composite Card (Tarjeta de presentación del modelo).</li>
+                <li class="list-group-item">Sesiones fotográficas profesionales.</li>
+                <li class="list-group-item">Cursos y talleres de modelaje.</li>
+                <li class="list-group-item">Manuales o guías de pasarela e imagen.</li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <img src="img/runways.jpg" class="container">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+      
+    <section id="preguntas" class="container">
+      <div class="text-center">
+      <h2 class="ask">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="accordion accordion-flush" id="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <strong>¿Cómo puedo aplicar para ser modelo?</strong> 
+            </button>
+          </h2>
+
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Puedes completar el formulario de inscripción en nuestro sitio web y adjuntar fotografías recientes, junto con tus datos personales y medidas.</div>
+            </div>
+          </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <strong>¿Qué tipo de modelos representa la agencia?</strong>
+          </button>
+        </h2>
+
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Representamos modelos para fotografía, pasarela, publicidad, comercio electrónico, televisión, redes sociales y campañas de marcas.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <strong>¿Cómo puedo contratar modelos para un evento o campaña?</strong>
+            </button>
+          </h2>
+
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Puedes comunicarte con nuestro equipo a través del formulario de contacto, correo electrónico o teléfono para recibir una cotización personalizada.</div>
+          </div>
+        </div>
+      </div>    
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+		  <p id="name">Sandra María Ávila Ruiz - 12311185</p>
+		</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
